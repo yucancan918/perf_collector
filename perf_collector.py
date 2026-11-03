@@ -63,7 +63,7 @@ def _ensure_lh_driver(log_cb=None):
         try:
             proc = subprocess.Popen([lh_exe])
         except Exception as e:
-            _log(f"❌ 启动 LibreHardwareMonitor.exe 失败: {e}")
+            _log(f"❌ 启动 LibreHardwareMonitor.exe 失败了: {e}")
             return False
     _log("   等待 6 秒让驱动完成安装...")
     time.sleep(6)
